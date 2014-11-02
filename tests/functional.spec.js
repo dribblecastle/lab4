@@ -46,6 +46,16 @@ describe("Functional", function() {
   // function argument.
   // TODO: write a test for the custom method you wrote
   // in exercises/functional.js
-  it("should test the exercise you wrote yourself");
+  it("should add the numbers in your array", function() {
+
+    var testArray = [ 1, 2, 3 ];
+
+    // expected result
+    answer = 6;
+
+    // call the method we're testing
+    result = functional.addUpArray(testArray);
+    expect(result).to.eql(answer);
+  });
 
 });
